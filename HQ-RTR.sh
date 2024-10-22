@@ -1,6 +1,7 @@
 #!/bin/bash
 mkdir /etc/net/ifaces/enp6s{19,19.100,19.200,19.999}
 mkdir /etc/net/ifaces/tun0
+cp /etc/net/ifaces/enp6s18/options /etc/net/ifaces/enp6s19/
 echo 172.16.4.2/28 > /etc/net/ifaces/enp6s18/ipv4address
 echo default via 172.16.4.1 > /etc/net/ifaces/enp6s18/ipv4route
 echo nameserver 77.88.8.8 > /etc/net/ifaces/enp6s18/resolv.conf
