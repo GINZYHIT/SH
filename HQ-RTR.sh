@@ -20,7 +20,7 @@ systemctl restart network
 apt-get install frr -y
 sed -i 's/ospfd=no/ospfd=yes/g' /etc/frr/daemons
 systemctl enable --now frr
-sh SH/frr.sh
+sh SH/frrH.sh
 iptables -t nat -A POSTROUTING -o enp6s18 -j MASQUERADE
 iptables-save > /etc/sysconfig/iptables
 systemctl enable --now iptables
