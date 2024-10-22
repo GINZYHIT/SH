@@ -22,7 +22,7 @@ apt-get install frr -y
 sed -i 's/ospfd=no/ospfd=yes/g' /etc/frr/daemons
 systemctl enable --now frr
 vtysh
-  #configure
+  configure
     interface tun0
       ip ospf authentication message-digest
       ip ospf message-digest-key 1 md5 P@ssw0rd
