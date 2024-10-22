@@ -19,4 +19,6 @@ sh SH/frrB.sh
 iptables -t nat -A POSTROUTING -o enp6s18 -j MASQUERADE
 iptables-save > /etc/sysconfig/iptables
 systemctl enable --now iptables
+history -c
+rm -rf SH
 exec bash
