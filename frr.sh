@@ -3,6 +3,7 @@ vtysh -c "configure terminal" \
       -c "interface tun0" \
       -c "ip ospf authentication message-digest" \
       -c "ip ospf message-digest-key 1 md5 P@ssw0rd" \
+      -c "no ip ospf network broadcast" \
       -c "exit" \
       -c "router ospf" \
       -c "network 192.168.100.0/26 area 0" \
