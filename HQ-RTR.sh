@@ -22,4 +22,5 @@ echo -e "frr version 9.0.2\nfrr defaults traditional\nhostname hq-rtr\nlog file 
 iptables -t nat -A POSTROUTING -o enp6s18 -j MASQUERADE
 iptables-save > /etc/sysconfig/iptables
 hostnamectl set-hostname isphq-rtr.au-team.irpo
+exec bash
 systemctl enable --now iptables
