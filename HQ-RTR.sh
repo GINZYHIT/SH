@@ -1,5 +1,5 @@
 #!/bin/bash
-hostnamectl set-hostname isphq-rtr.au-team.irpo
+hostnamectl set-hostname hq-rtr.au-team.irpo
 exec bash
 mkdir /etc/net/ifaces/enp6s{19,19.100,19.200,19.999}
 mkdir /etc/net/ifaces/tun0
