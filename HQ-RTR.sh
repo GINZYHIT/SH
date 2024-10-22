@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir /etc/net/ifaces/enp6s{19.100,19.200,19.999}
+mkdir /etc/net/ifaces/enp6s{19,19.100,19.200,19.999}
 mkdir /etc/net/ifaces/tun0
 echo 172.16.4.2/28 > /etc/net/ifaces/enp6s18/ipv4address
 echo default via 172.16.4.1 > /etc/net/ifaces/enp6s18/ipv4route
