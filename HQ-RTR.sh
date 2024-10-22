@@ -20,20 +20,7 @@ systemctl restart network
 apt-get install frr -y
 sed -i 's/ospfd=no/ospfd=yes/g' /etc/frr/daemons
 systemctl enable --now frr
-vtysh -c "configure terminal" \
-      -c "interface tun0" \
-      -c "ip ospf authentication message-digest" \
-      -c "ip ospf message-digest-key 1 md5 P@ssw0rd" \
-      -c "exit" \
-      -c "router ospf" \
-      -c "network 192.168.100.0/26 area 0" \
-      -c "network 192.168.200.0/28 area 0" \
-      -c "network 192.168.99.0/29 area 0" \
-      -c "network 172.16.30.0/30 area 0" \
-      -c "do wr" \
-      -c "exit" \
-      -c "exit" \
-      -c "exit" \
+sh SH/frr.sh
 iptables -t nat -A POSTROUTING -o enp6s18 -j MASQUERADE
 iptables-save > /etc/sysconfig/iptables
 systemctl enable --now iptables
