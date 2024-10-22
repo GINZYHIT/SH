@@ -38,3 +38,4 @@ vtysh -c "configure terminal" \
 iptables -t nat -A POSTROUTING -o enp6s18 -j MASQUERADE
 iptables-save > /etc/sysconfig/iptables
 systemctl enable --now iptables
+exec bash
