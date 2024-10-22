@@ -19,7 +19,21 @@ systemctl restart network
 apt-get install frr -y
 sed -i 's/ospfd=no/ospfd=yes/g' /etc/frr/daemons
 systemctl enable --now frr
-echo -e "frr version 9.0.2\nfrr defaults traditional\nhostname hq-rtr\nlog file /var/log/frr/frr.log\nno ipv6 forwarding\n!\ninterface tun0\n ip ospf authentication message-digest\n ip ospf message-digest-key 1 md5 P@ssw0rd\nexit\n!\nrouter ospf\n network 192.168.100.0/26 area 0\n network 192.168.200.0/28 area 0\n network 192.168.99.0/29 area 0\n network 172.16.30.0/30 area 0\nexit\n!" > /etc/frr/frr.conf
+vtysh
+configure
+interface tun0
+ip ospf authentication message-digest
+ip ospf message-digest-key 1 md5 P@ssw0rd
+exit
+router ospf
+network 192.168.100.0/26 area 0
+network 192.168.200.0/28 area 0
+network 192.168.99.0/29 area 0
+network 172.16.30.0/30 area 0
+do wr
+exit
+exit
+exit
 iptables -t nat -A POSTROUTING -o enp6s18 -j MASQUERADE
 iptables-save > /etc/sysconfig/iptables
 hostnamectl set-hostname isphq-rtr.au-team.irpo
