@@ -1,5 +1,4 @@
 #!/bin/bash
-apt-get update
 apt-get install tzdata -y
 timedatectl set-timezone Europe/Moscow
 apt-get install iptables -y
