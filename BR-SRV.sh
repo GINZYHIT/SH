@@ -1,5 +1,5 @@
 #!/bin/bash
-hostnamectl set-hostname hq-srv.au-team.irpo
+hostnamectl set-hostname br-srv.au-team.irpo
 echo 192.168.0.2/27 > /etc/net/ifaces/enp6s18/ipv4address
 echo default via 192.168.0.1 > /etc/net/ifaces/enp6s18/ipv4route
 echo nameserver 77.88.8.8 > /etc/net/ifaces/enp6s18/resolv.conf
