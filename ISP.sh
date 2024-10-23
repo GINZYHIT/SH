@@ -18,6 +18,7 @@ echo 172.16.5.1/28 > /etc/net/ifaces/enp6s20/ipv4address
 hostnamectl set-hostname isp.au-team.irpo
 echo propishi ety commandy systemctl enable --now iptables
 systemctl restart network
+apt-get remove git -y
 history -c
 rm -rf SH
 exec bash
