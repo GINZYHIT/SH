@@ -26,7 +26,6 @@ iptables-save > /etc/sysconfig/iptables
 systemctl enable --now iptables
 apt-get install dhcp-server -y
 systemctl enable --now dhcp
-cp /etc/dhcp/dhcpd.conf.example /etc/dhcp/dhcpd.conf
 echo -e "subnet 192.168.200.0 netmask 255.255.255.240 {\n range 192.168.200.1 192.168.200.14;\n option domain-name-server 192.168.100.2;\n option domain-name "au-team.irpo";\n option routers 192.168.200.1;\n option broadcast-address 192.168.200.15;\n default-lease-time 600;\n max-lease-time 7200;\n}" >> /etc/dhcp/dhcpd.conf
 sed -i 's/DHCPDARGS=/DHCPDARGS=enp6s19/g' /etc/sysconfig/dhcpd
 systemctl restart dhcpd
