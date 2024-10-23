@@ -17,5 +17,5 @@ systemctl restart sshd
 history -c
 apt-get remove git -y
 rm -rf SH
-exec bash
 clear
+exec bash
