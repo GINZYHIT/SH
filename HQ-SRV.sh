@@ -9,7 +9,8 @@ passwd sshuser
 P@ssw0rd
 P@ssw0rd
 usermod -aG wheel sshuser
-
+sed -i 's/#WHEEL_USERS ALL=(ALL:ALL) ALL/WHEEL_USERS ALL=(ALL:ALL) ALL/g' /etc/sudoers
+sed -i 's/#WHEEL_USERS ALL=(ALL:ALL) NOPASSWD: ALL/WHEEL_USERS ALL=(ALL:ALL) NOPASSWD: ALL/g' /etc/sudoers
 cp /etc/net/sysctl.conf /etc/net/sysctl.conf.bak
 sed -i 's/net.ipv4.ip_forward = 0/net.ipv4.ip_forward = 1/g' /etc/net/sysctl.conf
 systemctl restart network
