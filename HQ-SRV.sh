@@ -33,5 +33,5 @@ host 192.168.100.2 127.0.0.1
 history -c
 apt-get remove git -y
 rm -rf SH
-exec bash
 clear
+exec bash
