@@ -10,19 +10,11 @@ P@ssw0rd
 P@ssw0rd
 usermod -aG wheel sshuser
 echo -e "WHEEL_USERS ALL=(ALL:ALL) ALL\nWHEEL_USERS ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
-sed -i 's/#Port 22/Port 2024/g' /etc/openssh/sshd_config
-sed -i 's/#MaxAuthTries 6/MaxAuthTries 2/g' /etc/openssh/sshd_config
-
+echo -e "Port22\nMaxAuthtries 2\nBanner /etc/mybanner\nAllowUsers sshuser" >> /etc/openssh/sshd_config
+echo Authorized access only > /etc/mybanner
 cp /etc/net/sysctl.conf /etc/net/sysctl.conf.bak
 sed -i 's/net.ipv4.ip_forward = 0/net.ipv4.ip_forward = 1/g' /etc/net/sysctl.conf
 systemctl restart network
-apt-get install frr -y
-sed -i 's/ospfd=no/ospfd=yes/g' /etc/frr/daemons
-systemctl enable --now frr
-sh SH/frrH.sh
-iptables -t nat -A POSTROUTING -o enp6s18 -j MASQUERADE
-iptables-save > /etc/sysconfig/iptables
-systemctl enable --now iptables
 apt-get remove git -y
 history -c
 rm -rf SH
