@@ -21,4 +21,5 @@ systemctl restart network
 apt-get remove git -y
 history -c
 rm -rf SH
+clear
 exec bash
