@@ -13,6 +13,7 @@ echo Authorized access only > /etc/mybanner
 cp /etc/net/sysctl.conf /etc/net/sysctl.conf.bak
 sed -i 's/net.ipv4.ip_forward = 0/net.ipv4.ip_forward = 1/g' /etc/net/sysctl.conf
 systemctl restart network
+systemctl restart sshd
 history -c
 apt-get remove git -y
 rm -rf SH
