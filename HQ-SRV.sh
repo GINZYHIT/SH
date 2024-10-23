@@ -4,7 +4,7 @@ echo 192.168.100.2/26 > /etc/net/ifaces/enp6s18/ipv4address
 echo default via 192.168.100.1 > /etc/net/ifaces/enp6s18/ipv4route
 echo nameserver 77.88.8.8 > /etc/net/ifaces/enp6s18/resolv.conf
 systemctl restart network
-echo tikni dva raza
+echo tikni enter dva raza
 sh SH/sshuser.sh
 usermod -aG wheel sshuser
 echo -e "WHEEL_USERS ALL=(ALL:ALL) ALL\nWHEEL_USERS ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
