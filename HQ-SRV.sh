@@ -4,10 +4,7 @@ echo 192.168.100.2/26 > /etc/net/ifaces/enp6s18/ipv4address
 echo default via 192.168.100.1 > /etc/net/ifaces/enp6s18/ipv4route
 echo nameserver 77.88.8.8 > /etc/net/ifaces/enp6s18/resolv.conf
 systemctl restart network
-useradd sshuser -u 1010
-passwd sshuser
-P@ssw0rd
-P@ssw0rd
+sh SH/sshuser.sh
 usermod -aG wheel sshuser
 echo -e "WHEEL_USERS ALL=(ALL:ALL) ALL\nWHEEL_USERS ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 echo -e "Port22\nMaxAuthtries 2\nBanner /etc/mybanner\nAllowUsers sshuser" >> /etc/openssh/sshd_config
