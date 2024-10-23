@@ -32,5 +32,5 @@ systemctl restart dhcpd
 apt-get remove git -y
 history -c
 rm -rf SH
-exec bash
 clear
+exec bash
