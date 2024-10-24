@@ -18,6 +18,9 @@ echo 172.16.5.1/28 > /etc/net/ifaces/enp6s20/ipv4address
 hostnamectl set-hostname isp.au-team.irpo
 echo propishi ety commandy systemctl enable --now iptables
 systemctl restart network
+ssh-keygen -t ed25519 -C "ginzy.hit@gmail.com"
+ssh-copy-id root@172.16.4.2
+
 scp -r /root/SH root@172.16.4.2:/root/
 apt-get remove git -y
 history -c
