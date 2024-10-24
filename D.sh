@@ -1,5 +1,5 @@
 #!/bin/bash
-mac_address="XX:XX:XX:XX:XX:XX"
+mac_address="BC:24:11:58:C5:61"
 while true; do
   if arp -a | grep "$mac_address" > /dev/null; then
     echo "MAC-адрес найден, запуск скрипта..."
