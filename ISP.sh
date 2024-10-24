@@ -19,6 +19,7 @@ hostnamectl set-hostname isp.au-team.irpo
 echo propishi ety commandy systemctl enable --now iptables
 systemctl restart network
 
+apt-get install sudo -y
 echo -e "WHEEL_USERS ALL=(ALL:ALL) ALL\nWHEEL_USERS ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 sh SH/1.sh
 scp -r /root/SH root@172.16.4.2:/root/
