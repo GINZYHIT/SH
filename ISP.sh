@@ -19,8 +19,8 @@ hostnamectl set-hostname isp.au-team.irpo
 systemctl enable --now iptables
 systemctl restart network
 #sh SH/1.sh
-#scp -r /root/SH/* user@172.16.4.2:/home/user/SH
-#ssh user@172.16.4.2
+scp -r /root/SH/* user@172.16.4.2:/home/user/SH
+ssh user@172.16.4.2 "sudo sh /home/user/SH/HQ-RTR.sh"
 #sudo sh SH/HQ-RTR.sh
 #exit
 #exit
