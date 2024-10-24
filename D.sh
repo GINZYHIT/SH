@@ -6,5 +6,5 @@ while true; do
     SH/ISP.sh
   fi
   sleep 10 # Проверка каждые 10 секунд
-done
+done &
 
