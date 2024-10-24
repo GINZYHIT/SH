@@ -19,11 +19,11 @@ hostnamectl set-hostname isp.au-team.irpo
 systemctl enable --now iptables
 systemctl restart network
 
-scp -r /root/SH/* user@172.16.4.2:/home/user/SH
-ssh user@172.16.4.2
-sudo sh SH/HQ-RTR.sh
-exit
-exit
+#scp -r /root/SH/* user@172.16.4.2:/home/user/SH
+#ssh user@172.16.4.2
+#sudo sh SH/HQ-RTR.sh
+#exit
+#exit
 
 apt-get remove git -y
 history -c
