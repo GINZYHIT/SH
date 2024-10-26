@@ -21,16 +21,12 @@ systemctl restart network
 #sh SH/1.sh
 scp -r /root/SH/* user@172.16.4.2:/home/user/SH
 ssh user@172.16.4.2 "sudo sh /home/user/SH/HQ-RTR.sh"
-exit
-exit
+logout
 
 scp -r /root/SH/* user@172.16.5.2:/home/user/SH
 ssh user@172.16.5.2 "sudo sh /home/user/SH/BR-RTR.sh"
-exit
-exit
+logout
 #sudo sh SH/HQ-RTR.sh
-#exit
-#exit
 
 apt-get remove git -y
 history -c
