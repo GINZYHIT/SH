@@ -33,3 +33,5 @@ systemctl restart dhcpd
 rm -rf SH
 history -c
 clear
+sudo scp -r /home/user/SH/* user@172.16.100.2:/home/user/SH
+ssh user@172.16.100.2 "sudo bash /home/user/SH/HQ-SRV.sh"
