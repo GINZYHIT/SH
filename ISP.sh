@@ -22,8 +22,8 @@ systemctl restart network
 
 scp -r /root/SH/* user@172.16.4.2:/home/user/SH
 scp -r /root/SH/* user@172.16.5.2:/home/user/SH
-ssh user@172.16.4.2 "sudo sh /home/user/SH/HQ-RTR.sh"
-ssh user@172.16.5.2 "sudo sh /home/user/SH/BR-RTR.sh"
+ssh user@172.16.4.2 "sudo bash /home/user/SH/HQ-RTR.sh"
+ssh user@172.16.5.2 "sudo bash /home/user/SH/BR-RTR.sh"
 #sudo sh SH/HQ-RTR.sh
 
 apt-get remove git -y
