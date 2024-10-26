@@ -23,5 +23,5 @@ apt-get remove git -y
 history -c
 rm -rf SH
 clear
-echo ТЫКНИТЕ CTRL+D
+echo nazhmy na CTRL+D
 
