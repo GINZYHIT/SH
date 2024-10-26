@@ -34,4 +34,3 @@ rm -rf SH
 history -c
 clear
 echo ТЫКНИТЕ CTRL+D
-exec bash
