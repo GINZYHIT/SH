@@ -23,5 +23,5 @@ apt-get remove git -y
 history -c
 rm -rf SH
 clear
-
-
+scp -r /home/user/SH/* user@192.168.0.2:/home/user/SH
+ssh user@192.168.0.2 "sudo bash /home/user/SH/BR-SRV.sh"
