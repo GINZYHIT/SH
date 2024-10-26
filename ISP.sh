@@ -19,12 +19,13 @@ hostnamectl set-hostname isp.au-team.irpo
 systemctl enable --now iptables
 systemctl restart network
 #sh SH/1.sh
-echo VVEDY YES I NAPISHY P@ssw0rd
+echo VVEDY YES I NAPISHY PAROL 'P@ssw0rd'
 scp -r /root/SH/* user@172.16.4.2:/home/user/SH
-echo VVEDY YES I NAPISHY P@ssw0rd
+echo VVEDY YES I NAPISHY 'P@ssw0rd'
 scp -r /root/SH/* user@172.16.5.2:/home/user/SH
-echo NAPISHY P@ssw0rd
+echo NAPISHY PAROL 'P@ssw0rd'
 ssh user@172.16.4.2 "sudo bash /home/user/SH/HQ-RTR.sh"
+echo NAPISHY PAROL 'P@ssw0rd'
 ssh user@172.16.5.2 "sudo bash /home/user/SH/BR-RTR.sh"
 #sudo sh SH/HQ-RTR.sh
 
