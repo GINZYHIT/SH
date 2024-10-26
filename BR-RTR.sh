@@ -22,6 +22,6 @@ systemctl enable --now iptables
 apt-get remove git -y
 history -c
 rm -rf SH
-echo ТЫКНИТЕ CTRL+D
 clear
-exec bash
+echo ТЫКНИТЕ CTRL+D
+
