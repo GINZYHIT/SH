@@ -33,5 +33,5 @@ systemctl restart dhcpd
 rm -rf SH
 history -c
 clear
-ТЫКНИТЕ CTRL+D
+echo ТЫКНИТЕ CTRL+D
 exec bash
