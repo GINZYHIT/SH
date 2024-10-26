@@ -18,4 +18,3 @@ history -c
 apt-get remove git -y
 rm -rf SH
 clear
-exec bash
