@@ -25,7 +25,7 @@ iptables -t nat -A POSTROUTING -o enp6s18 -j MASQUERADE
 iptables-save > /etc/sysconfig/iptables
 systemctl enable --now iptables
 apt-get install dhcp-server -y
-systemctl enable --now dhcp
+systemctl enable --now dhcpd
 mv -f SH/dhcpd.conf /etc/dhcp/dhcpd.conf
 sed -i 's/DHCPDARGS=/DHCPDARGS=enp6s19.200/g' /etc/sysconfig/dhcpd
 systemctl restart dhcpd
