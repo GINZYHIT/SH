@@ -19,7 +19,7 @@ sh SH/frrB.sh
 iptables -t nat -A POSTROUTING -o enp6s18 -j MASQUERADE
 iptables-save > /etc/sysconfig/iptables
 systemctl enable --now iptables
-apt-get remove git -y
+#apt-get remove git -y
 scp -r /home/user/SH/* user@192.168.0.2:/home/user/SH
 ssh user@192.168.0.2 "sudo bash /home/user/SH/BR-SRV.sh"
 history -c
