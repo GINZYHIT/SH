@@ -31,5 +31,7 @@ sed -i 's/DHCPDARGS=/DHCPDARGS=enp6s19.200/g' /etc/sysconfig/dhcpd
 systemctl restart dhcpd
 #apt-get remove git -y
 rm -rf SH
+history -c
 clear
+ТЫКНИТЕ CTRL+D
 exec bash
