@@ -15,6 +15,6 @@ echo nameserver 192.168.100.2 > /etc/net/ifaces/enp6s18/resolv.conf
 systemctl restart network
 systemctl restart sshd
 history -c
-apt-get remove git -y
+#apt-get remove git -y
 rm -rf SH
 clear
