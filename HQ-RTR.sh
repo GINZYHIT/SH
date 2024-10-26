@@ -33,4 +33,4 @@ systemctl restart dhcpd
 rm -rf SH
 history -c
 clear
-echo ТЫКНИТЕ CTRL+D
+echo nazhmy na CTRL+D
