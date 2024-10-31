@@ -20,13 +20,13 @@ sh SH/frrB.sh
 iptables -t nat -A POSTROUTING -o enp6s18 -j MASQUERADE
 iptables-save > /etc/sysconfig/iptables
 systemctl enable --now iptables
-echo **************************************************
-echo **************NAPISHY PAROL "resu"****************
-echo **************************************************
+echo "**************************************************"
+echo "**************NAPISHY PAROL "resu"****************"
+echo "**************************************************"
 scp -r /home/user/SH/* user@192.168.0.2:/home/user/
-echo **************************************************
-echo **************NAPISHY PAROL "resu"****************
-echo **************************************************
+echo "**************************************************"
+echo "**************NAPISHY PAROL "resu"****************"
+echo "**************************************************"
 ssh user@192.168.0.2 "sudo bash /home/user/BR-SRV.sh"
 history -c
 rm -rf SH
