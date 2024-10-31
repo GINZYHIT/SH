@@ -19,9 +19,9 @@ hostnamectl set-hostname isp.au-team.irpo
 systemctl enable --now iptables
 systemctl restart network
 #sh SH/1.sh
-echo VVEDY YES I NAPISHY PAROL 'P@ssw0rd'
+echo "/e[32mVVEDY YES I NAPISHY PAROL 'P@ssw0rd'\e[0m"
 scp -r /root/SH/* user@172.16.4.2:/home/user/SH
-echo VVEDY YES I NAPISHY 'P@ssw0rd'
+echo "/e[32mVVEDY YES I NAPISHY 'P@ssw0rd'\e[0m"
 scp -r /root/SH/* user@172.16.5.2:/home/user/SH
 apt-get remove git -y
 history -c
