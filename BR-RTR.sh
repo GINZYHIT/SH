@@ -24,6 +24,6 @@ systemctl enable --now iptables
 #scp -r /home/user/SH/* user@192.168.0.2:/home/user/SH
 
 history -c
-rm -rf SH
+#rm -rf SH
 clear
 
