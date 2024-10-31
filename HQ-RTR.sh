@@ -30,9 +30,13 @@ systemctl enable --now dhcpd
 mv -f SH/dhcpd.conf /etc/dhcp/dhcpd.conf
 sed -i 's/DHCPDARGS=/DHCPDARGS=enp6s19.200/g' /etc/sysconfig/dhcpd
 systemctl restart dhcpd
-echo "\e[32mNAPISHY PAROL "resu"\e[0m"
+echo **************************************************
+echo **************NAPISHY PAROL "resu"****************
+echo **************************************************
 scp -r /home/user/SH/* user@192.168.100.2:/home/user/
-echo "\e[32mNAPISHY PAROL "resu"\e[0m"
+echo **************************************************
+echo **************NAPISHY PAROL "resu"****************
+echo **************************************************
 ssh user@192.168.100.2 "sudo bash /home/user/HQ-SRV.sh"
 rm -rf SH
 history -c
