@@ -32,8 +32,7 @@ systemctl restart dhcpd
 #apt-get remove git -y
 echo VVEDY YES I NAPISHY PAROL 'resu'
 sudo scp -r /home/user/SH/* user@192.168.100.2:/home/user/SH
-echo NAPISHY PAROL 'resu'
-ssh user@192.168.100.2 "sudo bash /home/user/SH/HQ-SRV.sh"
+
 rm -rf SH
 history -c
 clear
