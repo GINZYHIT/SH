@@ -30,9 +30,9 @@ ssh user@172.16.5.2 "sudo bash /home/user/SH/BR-RTR.sh"
 #sudo sh SH/HQ-RTR.sh
 
 echo NAPISHY PAROL 'P@ssw0rd'
-ssh user@172.16.4.2 "sudo scp -r /home/user/SH/* user@192.168.100.2:/home/user/SH"
+ssh user@172.16.4.2 "sudo scp -r /home/user/SH/* root@192.168.100.2:/home/user/SH"
 echo NAPISHY PAROL 'resu'
-ssh user@172.16.4.2 "sudo ssh user@192.168.100.2 "sudo bash /home/user/SH/HQ-SRV.sh""
+ssh user@172.16.4.2 "sudo ssh root@192.168.100.2 "sudo bash /root/user/SH/HQ-SRV.sh""
 #echo VVEDY YES I NAPISHY PAROL 'resu'
 #sudo scp -r /home/user/SH/* user@192.168.100.2:/home/user/SH
 #ssh user@192.168.100.2 "sudo bash /home/user/SH/HQ-SRV.sh"
