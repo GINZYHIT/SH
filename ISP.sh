@@ -29,6 +29,11 @@ echo NAPISHY PAROL 'P@ssw0rd'
 ssh user@172.16.5.2 "sudo bash /home/user/SH/BR-RTR.sh"
 #sudo sh SH/HQ-RTR.sh
 
+echo NAPISHY PAROL 'P@ssw0rd'
+ssh user@172.16.4.2
+echo NAPISHY PAROL 'resu'
+ssh user@192.168.100.2 "sudo bash /home/user/SH/HQ-SRV.sh"
+
 apt-get remove git -y
 history -c
 rm -rf SH
