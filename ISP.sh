@@ -40,10 +40,10 @@ ssh user@172.16.4.2 "sudo bash /home/user/SH/sshsrv.sh"
 #sudo scp -r /home/user/SH/* user@192.168.100.2:/home/user/SH
 #ssh user@192.168.100.2 "sudo bash /home/user/SH/HQ-SRV.sh"
 
-echo NAPISHY PAROL 'P@ssw0rd'
-ssh user@172.16.5.2
-echo NAPISHY PAROL 'resu'
-ssh user@192.168.0.2 "sudo bash /home/user/SH/BR-SRV.sh"
+#echo NAPISHY PAROL 'P@ssw0rd'
+#ssh user@172.16.5.2
+#echo NAPISHY PAROL 'resu'
+#ssh user@192.168.0.2 "sudo bash /home/user/SH/BR-SRV.sh"
 
 apt-get remove git -y
 history -c
