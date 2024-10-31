@@ -23,28 +23,6 @@ echo VVEDY YES I NAPISHY PAROL 'P@ssw0rd'
 scp -r /root/SH/* user@172.16.4.2:/home/user/SH
 echo VVEDY YES I NAPISHY 'P@ssw0rd'
 scp -r /root/SH/* user@172.16.5.2:/home/user/SH
-echo NAPISHY PAROL 'P@ssw0rd'
-ssh user@172.16.4.2 "sudo bash /home/user/SH/HQ-RTR.sh"
-echo NAPISHY PAROL 'P@ssw0rd'
-ssh user@172.16.5.2 "sudo bash /home/user/SH/BR-RTR.sh"
-#sudo sh SH/HQ-RTR.sh
-
-
-ssh user@172.16.4.2 "sudo bash /home/user/SH/sshsrv.sh"
-
-#echo NAPISHY PAROL 'P@ssw0rd'
-#ssh user@172.16.4.2 "sudo scp -r /home/user/SH/* user@192.168.100.2:/home/user/SH"
-#echo NAPISHY PAROL 'resu'
-#ssh user@172.16.4.2 "sudo ssh user@192.168.100.2 "sudo bash /home/user/SH/HQ-SRV.sh""
-#echo VVEDY YES I NAPISHY PAROL 'resu'
-#sudo scp -r /home/user/SH/* user@192.168.100.2:/home/user/SH
-#ssh user@192.168.100.2 "sudo bash /home/user/SH/HQ-SRV.sh"
-
-#echo NAPISHY PAROL 'P@ssw0rd'
-#ssh user@172.16.5.2
-#echo NAPISHY PAROL 'resu'
-#ssh user@192.168.0.2 "sudo bash /home/user/SH/BR-SRV.sh"
-
 apt-get remove git -y
 history -c
 rm -rf SH
