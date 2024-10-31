@@ -31,9 +31,9 @@ mv -f SH/dhcpd.conf /etc/dhcp/dhcpd.conf
 sed -i 's/DHCPDARGS=/DHCPDARGS=enp6s19.200/g' /etc/sysconfig/dhcpd
 systemctl restart dhcpd
 #apt-get remove git -y
-echo NAPISHY PAROL "resu"
+echo "\e[32mNAPISHY PAROL "resu"\e[0m"
 scp -r /home/user/SH/* user@192.168.100.2:/home/user/
-echo NAPISHY PAROL "resu"
+echo "\e[32mNAPISHY PAROL "resu"\e[0m"
 ssh user@192.168.100.2 "sudo bash /home/user/HQ-SRV.sh"
 rm -rf SH
 history -c
