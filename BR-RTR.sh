@@ -22,8 +22,7 @@ systemctl enable --now iptables
 #apt-get remove git -y
 echo VVEDY YES I NAPISHY PAROL 'resu'
 scp -r /home/user/SH/* user@192.168.0.2:/home/user/SH
-echo NAPISHY PAROL 'resu'
-ssh user@192.168.0.2 "sudo bash /home/user/SH/BR-SRV.sh"
+
 history -c
 rm -rf SH
 clear
