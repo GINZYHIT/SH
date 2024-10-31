@@ -23,7 +23,9 @@ echo "**************************************************"
 echo "*******VVEDY YES I NAPISHY PAROL 'P@ssw0rd'*******"
 echo "**************************************************"
 scp -r /root/SH/* user@172.16.4.2:/home/user/SH
-echo VVEDY YES I NAPISHY 'P@ssw0rd'
+echo "**************************************************"
+echo "*******VVEDY YES I NAPISHY PAROL 'P@ssw0rd'*******"
+echo "**************************************************"
 scp -r /root/SH/* user@172.16.5.2:/home/user/SH
 apt-get remove git -y
 history -c
