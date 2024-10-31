@@ -33,7 +33,7 @@ systemctl restart dhcpd
 #echo VVEDY YES I NAPISHY PAROL 'resu'
 #sudo scp -r /home/user/SH/* user@192.168.100.2:/home/user/SH
 
-rm -rf SH
+#rm -rf SH
 history -c
 clear
 
