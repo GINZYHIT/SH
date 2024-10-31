@@ -1,4 +1,5 @@
 #!/bin/bash
+apt-get update
 hostnamectl set-hostname br-rtr.au-team.irpo
 mkdir /etc/net/ifaces/enp6s19
 mkdir /etc/net/ifaces/tun0
