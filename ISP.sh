@@ -25,6 +25,6 @@ echo VVEDY YES I NAPISHY 'P@ssw0rd'
 scp -r /root/SH/* user@172.16.5.2:/home/user/SH
 apt-get remove git -y
 history -c
-rm -rf SH
+#rm -rf SH
 clear
 exec bash
